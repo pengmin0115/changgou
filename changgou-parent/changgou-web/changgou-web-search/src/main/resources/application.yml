@@ -1,0 +1,32 @@
+server:
+  port: 18088
+eureka:
+  client:
+    service-url:
+      defaultZone: http://121.196.101.202:7001/eureka
+  instance:
+    prefer-ip-address: true
+feign:
+  hystrix:
+    enabled: true
+spring:
+  thymeleaf:
+    cache: false
+  application:
+    name: web-search
+  main:
+    allow-bean-definition-overriding: true
+
+ribbon:
+  ReadTimeout: 300000 # 毫秒
+  eager-load:
+    enabled: true # 开启饥饿加载 系统启动 则初始化。
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 200000 # 10S
+#    allow-bean-definition-overriding: true
+

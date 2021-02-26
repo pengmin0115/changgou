@@ -1,0 +1,59 @@
+server:
+  port: 18090
+spring:
+  application:
+    name: order
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://121.196.101.202:3306/changgou_order?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: 123456
+  redis:
+    host: 121.196.101.202
+    port: 6379
+  main:
+    allow-bean-definition-overriding: true
+  rabbitmq:
+    host: 121.196.101.202
+    port: 5672
+  # 配置seata分布式事务;
+#  cloud:
+#    alibaba:
+#      seata:
+#        tx-service-group: my_test_tx_group
+eureka:
+  client:
+    service-url:
+      defaultZone: http://121.196.101.202:7001/eureka
+  instance:
+    prefer-ip-address: true
+feign:
+  hystrix:
+    enabled: true
+ribbon:
+  ReadTimeout: 5000
+  eager-load:
+    enabled: true # 开启饥饿加载 系统启动 则初始化。
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000
+          strategy: SEMAPHORE
+
+#位置支付交换机和队列
+mq:
+  pay:
+    exchange:
+      order: exchange.order
+    queue:
+      order: queue.order
+    routing:
+      key: queue.order
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true

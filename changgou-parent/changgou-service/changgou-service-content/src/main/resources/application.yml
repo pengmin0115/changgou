@@ -1,0 +1,37 @@
+server:
+  port: 18084
+spring:
+  application:
+    name: content
+  profiles:
+    active: remote
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://121.196.101.202:7001/eureka
+  instance:
+    prefer-ip-address: true
+feign:
+  hystrix:
+    enabled: true
+
+# 使用mybatis的自定义的方法时,需要开启;
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true  #开启驼峰功能
+
+#hystrix 配置
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          #如果enabled设置为false，则请求超时交给ribbon控制
+          enabled: true
+        isolation:
+          strategy: SEMAPHORE
+
+mapper:
+  before: false   # 配置通用mapper获取自增长ID的方式;
+  enable-method-annotation: true # 支持在get/set方法上加注解;

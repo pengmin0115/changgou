@@ -1,0 +1,56 @@
+server:
+  port: 18092
+spring:
+  application:
+    name: pay
+  main:
+    allow-bean-definition-overriding: true
+  rabbitmq:
+    host: 121.196.101.202
+    port: 5672
+    publisher-confirms: true  # 开启confirm机制;
+    publisher-returns: true   # 开启returnCallback机制;
+    listener:
+      simple:
+        acknowledge-mode: manual  # 将消费端的确认机制设为手动确认;
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://121.196.101.202:7001/eureka
+  instance:
+    prefer-ip-address: true
+
+feign:
+  hystrix:
+    enabled: true
+
+#hystrix 配置
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          #如果enabled设置为false，则请求超时交给ribbon控制
+          enabled: true
+        thread:
+          timeoutInMilliseconds: 5000
+        isolation:
+          strategy: SEMAPHORE
+
+#微信支付信息配置
+weixin:
+  appid: wx8397f8696b538317
+  partner: 1473426802
+  partnerkey: T6m9iK73b0kn9g5v426MKfHQH7X8rKwb
+  notifyurl: http://pm0115.utools.club/weChat/pay/notify
+
+#支付交换机和队列配置
+mq:
+  pay:
+    exchange:
+      order: exchange.order
+    queue:
+      order: queue.order
+    routing:
+      key: queue.order

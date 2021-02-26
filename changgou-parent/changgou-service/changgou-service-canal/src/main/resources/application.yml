@@ -1,0 +1,35 @@
+server:
+  port: 18083
+spring:
+  application:
+    name: canal
+  profiles:
+    active: remote
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://121.196.101.202:7001/eureka
+  instance:
+    prefer-ip-address: true
+
+feign:
+  hystrix:
+    enabled: true
+
+ribbon:
+  ReadTimeout: 300000 # 毫秒
+  eager-load:
+    enabled: true # 开启饥饿加载 系统启动 则初始化。
+
+#hystrix 配置
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          #如果enabled设置为false，则请求超时交给ribbon控制
+          enabled: true
+        isolation:
+          strategy: SEMAPHORE
+

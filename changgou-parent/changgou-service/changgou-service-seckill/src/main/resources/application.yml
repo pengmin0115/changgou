@@ -1,0 +1,42 @@
+server:
+  port: 18093
+spring:
+  application:
+    name: seckill
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    # URL中的"%2B"表示"+";
+    url: jdbc:mysql://localhost/changgou_seckill?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
+    username: root
+    password: root
+  rabbitmq:
+    host: 121.196.101.202 #mq的服务器地址
+    username: guest #账号
+    password: guest #密码
+    port: 5672
+  main:
+    allow-bean-definition-overriding: true
+  redis:
+    host: 121.196.101.202
+    port: 6379
+eureka:
+  client:
+    service-url:
+      defaultZone: http://121.196.101.202:7001/eureka
+  instance:
+    prefer-ip-address: true
+feign:
+  hystrix:
+    enabled: true
+#hystrix 配置
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          #如果enabled设置为false，则请求超时交给ribbon控制
+          enabled: true
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000
+          strategy: SEMAPHORE

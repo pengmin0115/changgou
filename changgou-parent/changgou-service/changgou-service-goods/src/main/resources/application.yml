@@ -1,0 +1,44 @@
+server:
+  port: 18081
+
+spring:
+  application:
+    name: goods
+  profiles:
+    active: local
+
+  main:
+    allow-bean-definition-overriding: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://121.196.101.202:7001/eureka
+  instance:
+    prefer-ip-address: true
+
+feign:
+  hystrix:
+    enabled: true
+logging:
+  level:
+    com:
+      changgou: debug
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true  #开启驼峰功能
+
+#超时配置
+ribbon:
+  ReadTimeout: 5000
+  eager-load:
+    enabled: true
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000
+          strategy: SEMAPHORE
