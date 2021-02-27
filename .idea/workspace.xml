@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9e79ba6-33bc-4cff-ac80-b1864dc5d159" name="Default Changelist" comment="添加畅购项目" />
+    <list default="true" id="c9e79ba6-33bc-4cff-ac80-b1864dc5d159" name="Default Changelist" comment="添加畅购项目">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou-parent/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/changgou-parent/.gitignore" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,7 +61,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="ignore_missing_gitignore" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/changgou-parent" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15391539" />
@@ -70,9 +74,9 @@
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\changgou\changgou-parent\changgou-service\changgou-service-pages\src\main\resources" />
-      <recent name="F:\changgou\changgou-parent\changgou-service\changgou-service-search\src\main\resources\templates" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.changgou.pay.service.impl" />
+      <recent name="com.changgou.service.impl" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\changgou\changgou-parent\changgou-service\changgou-service-seckill\src\main\java\com\changgou\seckill\utils" />
@@ -88,15 +92,16 @@
       <recent name="com.changgou.user.utils" />
       <recent name="com.changgou.utils" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.changgou.pay.service.impl" />
-      <recent name="com.changgou.service.impl" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\changgou\changgou-parent\changgou-service\changgou-service-pages\src\main\resources" />
+      <recent name="F:\changgou\changgou-parent\changgou-service\changgou-service-search\src\main\resources\templates" />
     </key>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean install" />
       <command value="mvn clean" />
+      <command value="mvn install" />
     </option>
   </component>
   <component name="RunDashboard">
@@ -450,7 +455,10 @@
       <workItem from="1614089086940" duration="3466000" />
       <workItem from="1614153068927" duration="308000" />
       <workItem from="1614247533313" duration="1077000" />
-      <workItem from="1614311428033" duration="4046000" />
+      <workItem from="1614311428033" duration="4357000" />
+      <workItem from="1614356632490" duration="73000" />
+      <workItem from="1614399037564" duration="323000" />
+      <workItem from="1614399589748" duration="927000" />
     </task>
     <task id="LOCAL-00001" summary="添加畅购项目">
       <created>1614090836115</created>
@@ -521,10 +529,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="129" y="54" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1614313751141" />
-    <state x="463" y="107" key="FileChooserDialogImpl" timestamp="1614314982844">
+    <state x="463" y="107" key="FileChooserDialogImpl" timestamp="1614400518469">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="107" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1614314982844" />
+    <state x="463" y="107" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1614400518469" />
     <state x="494" y="282" key="Github.CreateGistDialog" timestamp="1614314970045">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -533,22 +541,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="553" y="261" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1614089656161" />
-    <state width="1323" height="118" key="GridCell.Tab.0.bottom" timestamp="1614314660806">
+    <state width="1323" height="271" key="GridCell.Tab.0.bottom" timestamp="1614315826754">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="118" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1614314660806" />
-    <state width="1323" height="118" key="GridCell.Tab.0.center" timestamp="1614314660806">
+    <state width="1323" height="271" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1614315826754" />
+    <state width="1323" height="271" key="GridCell.Tab.0.center" timestamp="1614315826754">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="118" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1614314660806" />
-    <state width="1323" height="118" key="GridCell.Tab.0.left" timestamp="1614314660806">
+    <state width="1323" height="271" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1614315826754" />
+    <state width="1323" height="271" key="GridCell.Tab.0.left" timestamp="1614315826754">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="118" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1614314660806" />
-    <state width="1323" height="118" key="GridCell.Tab.0.right" timestamp="1614314660806">
+    <state width="1323" height="271" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1614315826754" />
+    <state width="1323" height="271" key="GridCell.Tab.0.right" timestamp="1614315826754">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="118" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1614314660806" />
+    <state width="1323" height="271" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1614315826754" />
     <state width="1117" height="96" key="GridCell.Tab.1.bottom" timestamp="1608043672842">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -565,10 +573,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1117" height="96" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1608043672842" />
-    <state x="94" y="0" width="1167" height="712" key="SettingsEditor" timestamp="1614314838969">
+    <state x="317" y="59" key="NewModule_or_Project.wizard" timestamp="1614400520279">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="94" y="0" width="1167" height="712" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1614314838969" />
+    <state x="317" y="59" key="NewModule_or_Project.wizard/0.0.1366.728@0.0.1366.728" timestamp="1614400520279" />
+    <state x="94" y="0" width="1167" height="712" key="SettingsEditor" timestamp="1614400528931">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="94" y="0" width="1167" height="712" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1614400528931" />
     <state x="404" y="105" width="582" height="524" key="StructurePopup" timestamp="1606118674406">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -585,18 +597,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="227" y="92" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1366.728@0.0.1366.728" timestamp="1606222248994" />
-    <state x="375" y="150" key="git4idea.merge.GitPullDialog" timestamp="1614314528609">
+    <state x="375" y="150" key="git4idea.merge.GitPullDialog" timestamp="1614399330591">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="375" y="150" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1614314528609" />
+    <state x="375" y="150" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1614399330591" />
     <state x="173" y="46" width="1114" height="643" key="new project wizard" timestamp="1607093342151">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="173" y="46" width="1114" height="643" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1607093342151" />
-    <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1614314457270">
+    <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1614315641929">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1614314457270" />
+    <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1614315641929" />
     <state x="208" y="131" width="672" height="678" key="search.everywhere.popup" timestamp="1607962164453">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
